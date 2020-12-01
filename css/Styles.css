@@ -1,3 +1,15 @@
+@font-face {
+    font-family:'Boots-Spurs';
+    src:url('Boots-Spurs.ttf.woff') format('woff'),
+        url('Boots-Spurs.ttf.svg#Boots-Spurs') format('svg'),
+        url('Boots-Spurs.ttf.eot'),
+        url('Boots-Spurs.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+
 header {background-color: black;
  color: white;}
 
@@ -18,12 +30,14 @@ color: #FFF;
 }
  
 .review{background-color:darkgrey;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
 
 
 }
-.Fonts{font-family: "Open Sans" Verdana, Sans-serif; }
- 
+h1{ 
+    font-family:"Boots-Spurs" ;
+
+} 
 
 
  
