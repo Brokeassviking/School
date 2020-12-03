@@ -1,5 +1,13 @@
 
-
+@font-face {
+    font-family: 'Boots-Spurs';
+    src:url('Boots-Spurs.ttf.woff') format('woff'),
+        url('Boots-Spurs.ttf.svg#Boots-Spurs') format('svg'),
+        url('Boots-Spurs.ttf.eot'),
+        url('Boots-Spurs.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 header {background-color: black;
