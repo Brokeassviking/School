@@ -1,8 +1,3 @@
-@Fonts-face: {font-family:"Segoe UI";
-
-}
-
-
 
 
 
@@ -27,12 +22,14 @@ color: #FFF;
 }
  
 .review{background-color:darkgrey;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
 
 
 }
+h1{ 
+    font-family:"Boots-Spurs" ;
 
- 
+} 
 
 
  
