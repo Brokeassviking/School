@@ -1,44 +1,69 @@
-
 @font-face {
-    font-family: 'Boots-Spurs';
-    src:url('Boots-Spurs.ttf.woff') format('woff'),
-        url('Boots-Spurs.ttf.svg#Boots-Spurs') format('svg'),
-        url('Boots-Spurs.ttf.eot'),
-        url('Boots-Spurs.ttf.eot?#iefix') format('embedded-opentype'); 
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Boots And Spurs";
+  src: url("../fonts/BootsAndSpurs.ttf") format("truetype");
 }
 
-
-header {background-color: black;
- color: white;}
-
- .section 
-
- .filing  {
-     color: white;
-     display: -moz-inline-stack    
-        
- }
-
- .Sale{background-color: green;
-color: #FFF;
+body {
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
 
- .guitar{background-color: red;
-color: #FFF;
+h1,
+h2,
+.logo {
+  font-family: "Boots And Spurs", "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
 }
- 
-.review{background-color:darkgrey;
-    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
 
-
+.product-list h2 {
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
-h1{ 
-    font-family:"Boots-Spurs" ;
 
-} 
+header,
+footer {
+  background-color: #202020;
+  color: #fff;
+}
 
+header a {
+  color: #fff;
+}
 
- 
+.cta {
+  background-color: #bb0000;
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+}
 
+.reviews {
+  background-color: #817c7c;
+}
+
+.featured--products {
+  background-color: #fbfbfb;
+}
+
+.cta-sale {
+  background-color: #127300;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+footer {
+  text-align: center;
+}
+
+.profile-pic {
+  border-radius: 60%;
+  width: 300px;
+  height: 300px;
+}
+
+/*home page*/
+.welcome {
+  background-image: url(../Images/home-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: right;
+  min-height: 70vh;
+}
