@@ -67,3 +67,12 @@ footer {
   background-position-x: right;
   min-height: 70vh;
 }
+
+/*home page*/
+.selling-points__image {
+  border-radius: 100px;
+}
+
+.List-info {
+  display: block;
+}
