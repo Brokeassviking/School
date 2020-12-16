@@ -7,6 +7,17 @@ body {
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.current-page {
+  font-weight: bold;
+  padding: 0px;
+  text-decoration: underline;
+}
+
+nav li {
+  display: inline;
+  padding: 0px;
+}
+
 h1,
 h2,
 .logo {
@@ -26,6 +37,8 @@ footer {
 
 header a {
   color: #fff;
+  padding: 0px;
+  text-decoration: none;
 }
 
 .cta {
@@ -66,6 +79,8 @@ footer {
   background-position-y: bottom;
   background-position-x: right;
   min-height: 70vh;
+  margin: 0;
+  padding-top: 0;
 }
 
 /*home page*/
