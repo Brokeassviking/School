@@ -9,7 +9,7 @@
   <body>
     <header>
 <nav>
-  <a href="index.html"><h1>Guitar Kings</h1></a>
+  <a href="index.html" class="logo">Guitar Kings</a>
  
  
   <ul>
@@ -20,28 +20,27 @@
     </header>
     <main>
 <h1>Contact us</h1> 
-
-<section class="List-info">
-  <label for= name>Your name</label>
-<input type="text"  name="fistname" class="List-info">
+  <form method="POST">
+  <label for= name>Full name</label>
+<input type="text" id="name" name="name" >
 <label for="Email">Email</label>
-<input type="text"  name="email-address" class="List-info">
+<input type="text" id="email" name="email-address" >
 <label for="guitars">Guitar:</label>
-<input list="Guitars" id="guitars" name="product-choice" class="List-info">
+<select id="guitars" name="Guitar" >
 
-
-<datalist id="Guitars">
   <option value=" Adriondack Red">
   <option value=" Adriondack Blue">
     <option value=" Adriondack Green">
       <option value=" Adriondack Yellow">
-</datalist>
-<input type="checkbox" name="sign-up" value="sign-up-now"><label for="sign-up">Sign up for email update</label>
-<label for="message">Message</label>
-<textarea id="message" name="messege" rows="5" cols="50"></textarea>
-<input type="submit" value="Send now" class="cta"/>
+      </select>
+      <input type="checkbox" id="email-updates" name="email-updates" />
+      <label for="email-updates">Sign up for email updates.</label>
+      <label for="message">Message</label>
+      <textarea id="message" name="message"></textarea>
+      <input type="submit" value="Send Now" class="cta" />
+</form>
 
-</section>
+
 
     </main>
     <footer>

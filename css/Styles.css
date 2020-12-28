@@ -9,13 +9,14 @@ body {
 
 .current-page {
   font-weight: bold;
-  padding: 0px;
   text-decoration: underline;
+}
+nav ul {
+  padding: 10px;
 }
 
 nav li {
-  display: inline;
-  padding: 0px;
+  display: inline-block;
 }
 
 h1,
@@ -37,7 +38,7 @@ footer {
 
 header a {
   color: #fff;
-  padding: 0px;
+  padding: 5px;
   text-decoration: none;
 }
 
@@ -45,20 +46,26 @@ header a {
   background-color: #bb0000;
   color: rgb(255, 255, 255);
   font-size: 1.5em;
+  text-transform: uppercase;
+  padding: 10px 80px;
+  border-radius: 5px;
+}
+
+.cta__small {
+  padding: 8px 30px;
+  font-size: 0.8em;
 }
 
 .reviews {
   background-color: #817c7c;
 }
 
-.featured--products {
+.featured__products {
   background-color: #fbfbfb;
 }
 
 .cta-sale {
   background-color: #127300;
-  color: #fff;
-  font-size: 1.5em;
 }
 
 footer {
@@ -76,11 +83,17 @@ footer {
   background-image: url(../Images/home-header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: bottom;
   background-position-x: right;
+  background-position-y: bottom;
   min-height: 70vh;
-  margin: 0;
-  padding-top: 0;
+  position: relative;
+}
+
+.welcome__content {
+  position: absolute;
+  text-align: center;
+  top: 100px;
+  left: 100px;
 }
 
 /*home page*/
@@ -88,6 +101,7 @@ footer {
   border-radius: 100px;
 }
 
-.List-info {
-  display: block;
+.product-img {
+  width: 250px;
+  height: 250px;
 }
