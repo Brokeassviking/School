@@ -7,18 +7,6 @@ body {
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.current-page {
-  font-weight: bold;
-  text-decoration: underline;
-}
-nav ul {
-  padding: 10px;
-}
-
-nav li {
-  display: inline-block;
-}
-
 h1,
 h2,
 .logo {
@@ -30,34 +18,50 @@ h2,
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
 
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: inline-block;
+}
+header {
+  display: flex;
+  align-items: center;
+}
+
 header,
 footer {
   background-color: #202020;
   color: #fff;
 }
 
+/* Links */
+a {
+  text-decoration: none;
+}
+
 header a {
   color: #fff;
-  padding: 5px;
-  text-decoration: none;
+  padding: 10px;
 }
 
 .cta {
   background-color: #bb0000;
-  color: rgb(255, 255, 255);
-  font-size: 1.5em;
+  color: #fff;
+  font-size: 1em;
   text-transform: uppercase;
   padding: 10px 80px;
   border-radius: 5px;
 }
 
-.cta__small {
+.cta-small {
   padding: 8px 30px;
   font-size: 0.8em;
 }
 
-.reviews {
-  background-color: #817c7c;
+.active {
+  text-decoration: underline;
 }
 
 .featured__products {
@@ -72,15 +76,9 @@ footer {
   text-align: center;
 }
 
-.profile-pic {
-  border-radius: 60%;
-  width: 300px;
-  height: 300px;
-}
-
-/*home page*/
+/* Home page */
 .welcome {
-  background-image: url(../Images/home-header.jpg);
+  background-image: url("../images/home-header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: right;
@@ -96,12 +94,74 @@ footer {
   left: 100px;
 }
 
-/*home page*/
-.selling-points__image {
-  border-radius: 100px;
+.reviews__content,
+.selling-points {
+  max-width: 1000px;
+  display: flex;
 }
 
-.product-img {
-  width: 250px;
-  height: 250px;
+.selling-points {
+  margin: 50px auto;
+}
+
+.selling-points > *,
+.reviews__content > * {
+  flex: 1;
+}
+
+.selling-points__images {
+  border-radius: 100px;
+  max-width: 500px;
+}
+.reviews {
+  background-color: #e8e8e8;
+  text-align: center;
+}
+
+.reviews__content {
+  text-align: left;
+  margin: auto;
+}
+.reviews__content div {
+  margin: 50px;
+}
+
+.review__images {
+  border-radius: 50%;
+  width: 80px;
+  float: right;
+}
+.review__name {
+  display: block;
+}
+
+/* Contact page */
+input,
+select,
+textarea {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+}
+
+/*Product Specific page*/
+
+.product-specific {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.product-specific > * {
+  flex: 1;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.product-image__thumbnail {
+  display: flex;
+}
+.product-image__thumbnail img {
+  margin: 10px;
 }
