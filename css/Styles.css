@@ -161,7 +161,6 @@ textarea {
 
 .product-image__thumbnail {
   display: flex;
-}
-.product-image__thumbnail img {
-  margin: 10px;
+  justify-content: space-between;
+  gap: 10px;
 }
