@@ -26,25 +26,28 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>Contact us</h1>
+    <main class="contact">
+      <h1>Contact</h1>
       <form method="POST">
-        <label for="name">Full name</label>
-        <input type="text" id="name" name="name" />
-        <label for="Email">Email</label>
-        <input type="text" id="email" name="email-address" />
-        <label for="guitars">Guitar:</label>
-        <select id="guitars" name="Guitar">
-          <option value=" Adriondack Red"></option>
-          <option value=" Adriondack Blue"></option>
-          <option value=" Adriondack Green"></option>
-          <option value=" Adriondack Yellow"></option>
-        </select>
-
-        <input type="checkbox" id="email-updates" name="email-updates" />
-        <label for="email-updates">Sign up for email updates.</label>
-        <label for="message">Message</label>
-        <textarea id="message" name="message"></textarea>
+        <section>
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" />
+          <label for="Email">Email</label>
+          <input type="text" id="email" name="email-address" />
+          <label for="guitars">Guitar:</label>
+          <select id="guitars" name="Guitar">
+            <option value=" Adriondack Red"></option>
+            <option value=" Adriondack Blue"></option>
+            <option value=" Adriondack Green"></option>
+            <option value=" Adriondack Yellow"></option>
+          </select>
+          <input type="checkbox" id="email-updates" name="email-updates" />
+          <label for="email-updates">Sign up for email updates.</label>
+        </section>
+        <section>
+          <label for="message">Message</label>
+          <textarea id="message" name="message"></textarea>
+        </section>
         <input type="submit" value="Send Now" class="cta" />
       </form>
     </main>

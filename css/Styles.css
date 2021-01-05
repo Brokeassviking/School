@@ -143,6 +143,18 @@ textarea {
   border-radius: 5px;
 }
 
+.contact{
+  max-width: 1000px;
+  margin: auto;
+
+
+}
+
+form{
+
+  display: flex;
+}
+
 /*Product Specific page*/
 
 .product-specific {
@@ -174,3 +186,6 @@ textarea {
   width: 95.767px;
   margin: auto;
 }
+
+
+/*
