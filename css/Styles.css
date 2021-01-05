@@ -148,7 +148,7 @@ textarea {
 .product-specific {
   display: flex;
   max-width: 1000px;
-  margin: auto;
+  margin: 50px auto;
 }
 
 .product-specific > * {
@@ -163,4 +163,14 @@ textarea {
   display: flex;
   justify-content: space-between;
   gap: 10px;
+}
+
+.product-specific__details {
+  padding: 0px 30px;
+}
+
+.product-specific__details a {
+  display: block;
+  width: 95.767px;
+  margin: auto;
 }
