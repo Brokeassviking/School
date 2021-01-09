@@ -56,16 +56,29 @@ header a {
 }
 
 .cta-small {
-  padding: 8px 30px;
+  padding: 8px 20px;
   font-size: 0.8em;
+  grid-column: 2;
+  grid-row: 2/4;
 }
 
 .active {
   text-decoration: underline;
 }
 
-.featured__products {
+.products {
   background-color: #fbfbfb;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+.products img {
+  grid-column: -1/1;
+}
+
+.products h2 .products h3,
+.products p {
+  grid-column: 1;
 }
 
 .cta-sale {
@@ -104,6 +117,10 @@ footer {
   margin: 50px auto;
 }
 
+.selling-points div ul li {
+  margin-bottom: 15px;
+}
+
 .selling-points > *,
 .reviews__content > * {
   flex: 1;
@@ -134,6 +151,21 @@ footer {
 .review__name {
   display: block;
 }
+.featured {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1000px;
+  margin: 50px auto;
+  gap: 10px;
+}
+
+.featured h2 {
+  grid-column: -1/1;
+}
+.featured img {
+  width: 100%;
+  gap: 10px;
+}
 
 /* Contact page */
 input,
@@ -141,18 +173,27 @@ select,
 textarea {
   border: 1px solid #c4c4c4;
   border-radius: 5px;
+  margin: 10px 10px 10px 0px;
+  padding: 10px;
 }
 
-.contact{
+textarea {
+  height: 85%;
+}
+
+.contact {
   max-width: 1000px;
   margin: auto;
-
-
 }
 
-form{
-
+.form-wrapper {
   display: flex;
+}
+
+.form-wrapper > * {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 /*Product Specific page*/
@@ -187,5 +228,9 @@ form{
   margin: auto;
 }
 
+/* Guitar page*/
 
-/*
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
